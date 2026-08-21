@@ -7,6 +7,7 @@ local activeBorderColor = {
 }
 local inactiveBorderColor = "rgba(2C515888)"
 local shadowColor = "rgba(010506CC)"
+local shellSurfaces = "^(omarchy-bar|omarchy-menu|omarchy-image-selector|omarchy-emojis|omarchy-clipboard|omarchy-keyboard-panel|omarchy-notifications|omarchy-osd|omarchy-polkit|omarchy-reminders|omarchy-network-qr|omarchy-network-speedtest|omarchy-disk-speedtest|omarchy-speed-test)$"
 
 hl.config({
   general = {
@@ -45,4 +46,15 @@ hl.config({
       render_power = 3,
     },
   },
+})
+
+-- Hyprland's blur settings only define the effect. Layer-shell clients must
+-- opt in separately, so apply the theme's rain-glass treatment to Omarchy's
+-- visible shell surfaces while leaving its wallpaper layer untouched.
+hl.layer_rule({
+  name = "last-call-shell-blur",
+  match = { namespace = shellSurfaces },
+  blur = true,
+  blur_popups = true,
+  ignore_alpha = 0.20,
 })

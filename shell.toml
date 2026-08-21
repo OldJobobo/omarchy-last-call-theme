@@ -90,8 +90,10 @@ text                       = "#94b3b5"
 border                    = "hyprland.active-border"
 border-alpha              = 0.90
 border-width              = 2
-scrim                     = "#010506"
-scrim-alpha               = 0.60
+# Keep the fullscreen scrim below hyprland.lua's layer-blur alpha cutoff so
+# only the translucent shell surface blurs; the wallpaper stays visible.
+scrim                     = "#0b1d20"
+scrim-alpha               = 0.16
 selected-background        = "#42686f"
 selected-background-alpha = 1.0
 selected-text             = "#c8e3e2"
@@ -106,8 +108,8 @@ text                       = "#94b3b5"
 border                    = "hyprland.active-border"
 border-alpha              = 0.90
 border-width              = 2
-scrim                     = "#010506"
-scrim-alpha               = 0.60
+scrim                     = "#0b1d20"
+scrim-alpha               = 0.16
 selected-background        = "#42686f"
 selected-background-alpha = 1.0
 selected-text             = "#c8e3e2"
@@ -123,8 +125,8 @@ text-error                 = "#ed634c"
 border           = "hyprland.active-border"
 border-error               = "#ed634c"
 border-alpha     = 1.0
-scrim            = "#010506"
-scrim-alpha      = 0.64
+scrim            = "#0b1d20"
+scrim-alpha      = 0.16
 accent           = "#00c6c2"
 
 [lock]
@@ -141,8 +143,8 @@ selection        = "#00c6c2"
 selection-alpha  = 0.42
 
 [image-picker]
-scrim                   = "#010506"
-scrim-alpha             = 0.64
+scrim                   = "#0b1d20"
+scrim-alpha             = 0.16
 text                       = "#94b3b5"
 selected-border         = "#e0f5f2"
 selected-border-alpha   = 1.0
