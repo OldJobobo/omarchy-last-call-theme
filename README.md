@@ -52,6 +52,8 @@ Load [`vencord.theme.css`](vencord.theme.css) through Vencord’s **Themes** set
 
 The included [`last-call-base24.yaml`](last-call-base24.yaml) provides 24 individually authored colors with no placeholder slot duplication. Its bright yellow, green, cyan, blue, and magenta extension slots recede into sign ash, bottle mist, signal fog, rain slate, and mauve ash—bringing a Solarized-like neutral shift to terminal brights. The scheme can be used independently anywhere Base24 is supported.
 
+![Last Call Base24 palette card](palette-card.jpg)
+
 | Role | Color | Purpose |
 | --- | --- | --- |
 | Canvas | `#0B1D20` | Main background |
@@ -63,27 +65,9 @@ The included [`last-call-base24.yaml`](last-call-base24.yaml) provides 24 indivi
 
 ## Wallpapers
 
-<table>
-  <tr>
-    <td><img src="backgrounds/daniil-alekseev-lc-main.jpg" width="260" alt="Rainy Last Call street with a lit phone booth"></td>
-    <td><img src="backgrounds/daniil-alekseev-lc-lh-01.jpg" width="260" alt="Rainy residential street at night"></td>
-    <td><img src="backgrounds/daniil-alekseev-lc-restaraunt-01.jpg" width="260" alt="Last Call restaurant exterior"></td>
-  </tr>
-  <tr>
-    <td><img src="backgrounds/daniil-alekseev-lc-shopfacade.jpg" width="260" alt="Weathered shop facade at night"></td>
-    <td><img src="backgrounds/daniil-alekseev-lc-street-01.jpg" width="260" alt="Dark rain-lit street scene"></td>
-    <td><img src="backgrounds/daniil-alekseev-lc-street-02.jpg" width="260" alt="Blue-green street scene after rain"></td>
-  </tr>
-  <tr>
-    <td><img src="backgrounds/daniil-alekseev-lc-street-03.jpg" width="260" alt="Quiet Last Call street at night"></td>
-    <td><img src="backgrounds/daniil-alekseev-pb-01.jpg" width="260" alt="Cold-lit phone booth study"></td>
-    <td><img src="backgrounds/daniil-alekseev-pb-01-red.jpg" width="260" alt="Phone booth study with a red signal light"></td>
-  </tr>
-  <tr>
-    <td><img src="backgrounds/daniil-alekseev-pb-03.jpg" width="260" alt="Blue-green phone booth composition"></td>
-    <td><img src="backgrounds/daniil-alekseev-pb-03-red.jpg" width="260" alt="Phone booth composition with red practical light"></td>
-  </tr>
-</table>
+![Contact sheet of all eleven Last Call wallpapers](wallpaper-contact-sheet.jpg)
+
+Eleven ultrawide scenes move between rain-cold streets, warm shop light, and focused phone-booth studies. The full-resolution originals are available in [`backgrounds/`](backgrounds/).
 
 ## Compatibility
 
