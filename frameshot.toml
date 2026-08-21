@@ -14,7 +14,7 @@ terminal = "foot"
 id = "nvim"
 cwd = "{templates}"
 command = ["nvim", "rust-preview-demo.rs", "+normal! 12Gzz"]
-rect = [90, 90, 1120, 750]
+rect = [90, 90, 1120, 700]
 
 # Telemetry is the active signal panel and showcases the authored btop ramps.
 [[windows]]
@@ -23,16 +23,16 @@ cwd = "{theme}"
 command = ["btop"]
 rect = [1350, 90, 1130, 650]
 
-# The lower-left terminal is tall enough to show the full MOTD palette and system card.
+# A clean shell proof: both ANSI rows, the MOTD card, and a restrained prompt.
 [[windows]]
-id = "fastfetch"
+id = "motd"
 cwd = "{theme}"
-command = ["bash", "-lc", "fastfetch; exec bash"]
-rect = [110, 875, 820, 320]
+command = ["bash", "--norc", "-i", "-c", "source \"$HOME/.bashrc\" >/dev/null 2>&1; clear; _ansi_palette; _sysinfo; printf '\\n\\033[1;36momarchy-last-call-theme\\033[0m  \\033[2;37mnight shift\\033[0m\\n\\033[1;36m❯\\033[0m '; exec sleep infinity"]
+rect = [110, 815, 820, 380]
 
-# The low audio trace completes the composition while preserving street detail.
+# Cava provides the low, wide audio trace anchoring the composition.
 [[windows]]
 id = "cava"
 cwd = "{theme}"
 command = ["bash", "-lc", "cava; exec bash"]
-rect = [470, 1215, 1720, 165]
+rect = [470, 1210, 1720, 170]
