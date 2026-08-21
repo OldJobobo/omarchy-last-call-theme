@@ -1,0 +1,150 @@
+# Last Call — Cold Line / Warm Signal
+# Smoked-glass shell surfaces with scarce, motivated practical light.
+
+[bar]
+background                  = "#0b1d20"
+background-alpha = 0.90
+text                       = "#94b3b5"
+active           = "#ed634c"
+scale-with-font  = true
+size-horizontal  = 26
+size-vertical    = 28
+
+[hyprland]
+active-border            = "rgb(00C6C2) rgb(E0F5F2) 45deg"
+active-border-foreground = "rgb(00C6C2) rgb(E0F5F2) 45deg"
+
+[controls]
+normal-color               = "#94b3b5"
+normal-fill-alpha   = 0.03
+normal-border       = "#2c5158"
+normal-border-width = 1
+normal-border-alpha = 0.60
+
+hover-cursor-color        = "#e0f5f2"
+hover-cursor-fill-alpha   = 0.08
+hover-cursor-border       = "#00c6c2"
+hover-cursor-border-width = 1
+hover-cursor-border-alpha = 0.70
+
+focus-color        = "#c8e3e2"
+focus-fill-alpha   = 0.10
+focus-border       = "hyprland.active-border"
+focus-border-width = 1
+focus-border-alpha = 0.90
+
+selected-color        = "#c8e3e2"
+selected-fill-alpha   = 0.18
+selected-border            = "#42686f"
+selected-border-width = 0
+selected-border-alpha = 1.0
+
+pressed-fill-alpha   = 0.24
+selection-fill-alpha = 0.36
+
+[spacing]
+scale = 0.95
+scale-with-font = true
+control-height   = 28
+popup-row-height = 30
+panel-gap        = 12
+panel-padding    = 16
+popup-padding    = 12
+
+[font]
+base-size  = 12
+caption    = 10
+body-small = 11
+body       = 12
+subtitle   = 13
+heading    = 16
+
+[popups]
+background                  = "#1e4147"
+background-alpha = 0.94
+text                       = "#94b3b5"
+border           = "hyprland.active-border"
+border-alpha     = 0.90
+border-width     = 2
+
+[tooltip]
+background                  = "#1e4147"
+background-alpha = 0.98
+text                       = "#94b3b5"
+border           = "#2c5158"
+border-alpha     = 1.0
+
+[notifications]
+background                  = "#1e4147"
+background-alpha = 0.96
+text                       = "#94b3b5"
+border           = "hyprland.active-border"
+border-alpha     = 0.90
+border-width     = 2
+countdown        = "#c5c15a"
+
+[launcher]
+background                  = "#1e4147"
+background-alpha          = 0.94
+text                       = "#94b3b5"
+border                    = "hyprland.active-border"
+border-alpha              = 0.90
+border-width              = 2
+scrim                     = "#010506"
+scrim-alpha               = 0.60
+selected-background        = "#42686f"
+selected-background-alpha = 1.0
+selected-text             = "#c8e3e2"
+selected-border            = "#42686f"
+selected-border-alpha     = 0.0
+selected-border-width     = 0
+
+[menu]
+background                  = "#1e4147"
+background-alpha          = 0.96
+text                       = "#94b3b5"
+border                    = "hyprland.active-border"
+border-alpha              = 0.90
+border-width              = 2
+scrim                     = "#010506"
+scrim-alpha               = 0.60
+selected-background        = "#42686f"
+selected-background-alpha = 1.0
+selected-text             = "#c8e3e2"
+selected-border            = "#42686f"
+selected-border-alpha     = 0.0
+selected-border-width     = 0
+
+[polkit]
+background                  = "#1e4147"
+background-alpha = 0.96
+text                       = "#94b3b5"
+text-error                 = "#ed634c"
+border           = "hyprland.active-border"
+border-error               = "#ed634c"
+border-alpha     = 1.0
+scrim            = "#010506"
+scrim-alpha      = 0.64
+accent           = "#00c6c2"
+
+[lock]
+background                  = "#1e4147"
+background-alpha = 0.90
+text                       = "#94b3b5"
+placeholder                = "#719398"
+text-error                 = "#ed634c"
+border           = "#2c5158"
+border-active    = "hyprland.active-border"
+border-error               = "#ed634c"
+border-alpha     = 1.0
+selection        = "#00c6c2"
+selection-alpha  = 0.42
+
+[image-picker]
+scrim                   = "#010506"
+scrim-alpha             = 0.64
+text                       = "#94b3b5"
+selected-border         = "#e0f5f2"
+selected-border-alpha   = 1.0
+unselected-border       = "#2c5158"
+unselected-border-alpha = 0.72

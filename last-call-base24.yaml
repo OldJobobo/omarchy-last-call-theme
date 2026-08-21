@@ -1,0 +1,36 @@
+system: "base24"
+name: "Last Call"
+slug: "last-call"
+author: "OldJobobo"
+variant: "dark"
+
+palette:
+  # --- rain glass / closing-hour neutral ramp ---
+  base00: "#0B1D20" # Closing Hour     - default background
+  base01: "#1E4147" # Rain Glass       - lighter background
+  base02: "#42686F" # Wet Pavement     - selection background
+  base03: "#719398" # Payphone Haze    - comments / muted text
+  base04: "#82A3A6" # Street Mist      - dark foreground
+  base05: "#94B3B5" # Clouded Neon     - default foreground
+  base06: "#C8E3E2" # Fluorescent Fog  - light foreground
+  base07: "#E0F5F2" # Booth Light      - brightest foreground
+
+  # --- cold line / warm signal accents ---
+  base08: "#ED634C" # Tail Light       - red / error
+  base09: "#D07A3F" # Rusted Awning    - orange / warning
+  base0A: "#C5C15A" # Distant Sign     - yellow
+  base0B: "#58AD73" # Bottle Glass     - green
+  base0C: "#00C6C2" # Phone Glow       - cyan
+  base0D: "#668CA9" # Rain Reflection  - blue
+  base0E: "#9C8499" # Mauve Shadow     - purple
+  base0F: "#967D6D" # Wet Brick        - brown / special
+
+  # --- base24 extension ---
+  base10: "#030E10" # Alley Depth      - darker background
+  base11: "#010506" # Blackout         - darkest background
+  base12: "#F47A64" # Brake Flare      - bright red
+  base13: "#D8D373" # Sign Glow        - bright orange / yellow
+  base14: "#7AC48E" # Leaf Shine       - bright green
+  base15: "#42D8D2" # Dial Tone        - bright cyan
+  base16: "#83A6BE" # Puddle Sky       - bright blue
+  base17: "#B49EB0" # Violet Afterimage - bright purple

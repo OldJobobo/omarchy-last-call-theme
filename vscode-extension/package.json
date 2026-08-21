@@ -1,0 +1,20 @@
+{
+    "name": "theme-aether",
+    "displayName": "Last Call Theme",
+    "description": "Rain-cold smoked glass with scarce warm signals",
+    "publisher": "local",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.70.0"
+    },
+    "categories": ["Themes"],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Last Call",
+                "uiTheme": "vs-dark",
+                "path": "./themes/aether-color-theme.json"
+            }
+        ]
+    }
+}

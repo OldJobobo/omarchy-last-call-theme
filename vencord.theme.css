@@ -1,0 +1,221 @@
+/**
+ * @name Last Call
+ * @description Rain-cold glass, fluorescent cyan, and one warm signal after closing time.
+ * @author OldJobobo
+ * @version 1.0.0
+ * @website https://github.com/OldJobobo/omarchy-last-call-theme
+ * @source https://github.com/OldJobobo/omarchy-last-call-theme/blob/master/vencord.theme.css
+ */
+
+/* Midnight 2.1+ by refact0r provides the layout and stable Discord mappings. */
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+
+/* --------------------------------------------------------------------------
+   Last Call structure
+   Compact, deliberate panels with a separated input and payphone DM mark.
+   -------------------------------------------------------------------------- */
+
+body {
+    --font: 'figtree';
+    --code-font: 'gg mono';
+    font-weight: 400;
+
+    --gap: 10px;
+    --divider-thickness: 2px;
+    --border-thickness: 1px;
+
+    --animations: on;
+    --list-item-transition: 160ms ease;
+    --dms-icon-svg-transition: 240ms ease;
+    --border-hover-transition: 180ms ease;
+
+    --top-bar-height: var(--gap);
+    --top-bar-button-position: titlebar;
+    --top-bar-title-position: off;
+    --subtle-top-bar-title: on;
+
+    --custom-window-controls: on;
+    --window-control-size: 13px;
+
+    --custom-dms-icon: custom;
+    --dms-icon-svg-url: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M6.6 10.8c1.5 3 3.9 5.4 6.9 6.9l2.3-2.3c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V21c0 .6-.4 1-1 1C10.4 22 2 13.6 2 3.3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1l-1.2 2.6z'/%3E%3C/svg%3E");
+    --dms-icon-svg-size: 54%;
+    --dms-icon-color-before: var(--text-4);
+    --dms-icon-color-after: var(--accent-1);
+    --custom-dms-background: color;
+    --dms-background-image-url: url('');
+    --dms-background-image-size: cover;
+    --dms-background-color: linear-gradient(145deg, var(--bg-2), var(--bg-4));
+
+    --background-image: off;
+    --background-image-url: url('');
+    --transparency-tweaks: off;
+    --remove-bg-layer: off;
+    --panel-blur: off;
+    --blur-amount: 10px;
+    --bg-floating: var(--bg-3);
+
+    --custom-chatbar: separated;
+    --chatbar-height: 50px;
+    --small-user-panel: on;
+
+    /* 4px reads like Hyprland's 2px at Discord's smaller component scale. */
+    --radius-xs: 2px;
+    --radius-sm: 4px;
+    --radius-md: 4px;
+    --radius-lg: 4px;
+    --radius-xl: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   Last Call Base24 projection
+   Text and surfaces follow base00-base07; signals follow base08-base17.
+   -------------------------------------------------------------------------- */
+
+:root {
+    --colors: on;
+
+    /* Text: booth light through rain haze. */
+    --text-0: #0b1d20;
+    --text-1: #e0f5f2;
+    --text-2: #c8e3e2;
+    --text-3: #94b3b5;
+    --text-4: #82a3a6;
+    --text-5: #719398;
+
+    /* Surfaces: opaque smoked glass, intentionally free of wallpaper bleed. */
+    --bg-1: #42686f;
+    --bg-2: #2c5158;
+    --bg-3: #1e4147;
+    --bg-4: #0b1d20;
+    --hover: rgb(66 104 111 / 18%);
+    --active: rgb(66 104 111 / 34%);
+    --active-2: rgb(66 104 111 / 52%);
+    --message-hover: rgb(1 5 6 / 22%);
+
+    /* Cyan is connection/focus; red is reserved for urgent state. */
+    --accent-1: #42d8d2;
+    --accent-2: #00c6c2;
+    --accent-3: color-mix(in oklab, #00c6c2 88%, #0b1d20);
+    --accent-4: color-mix(in oklab, #00c6c2 76%, #0b1d20);
+    --accent-5: color-mix(in oklab, #00c6c2 64%, #0b1d20);
+    --accent-new: #ed634c;
+    --mention: linear-gradient(to right, rgb(0 198 194 / 18%) 0%, rgb(0 198 194 / 7%) 44%, transparent 78%);
+    --mention-hover: linear-gradient(to right, rgb(0 198 194 / 24%) 0%, rgb(0 198 194 / 10%) 44%, transparent 78%);
+    --reply: linear-gradient(to right, rgb(113 147 152 / 15%) 0%, rgb(113 147 152 / 5%) 44%, transparent 78%);
+    --reply-hover: linear-gradient(to right, rgb(113 147 152 / 21%) 0%, rgb(113 147 152 / 8%) 44%, transparent 78%);
+
+    /* Presence and notification signals. */
+    --online: #58ad73;
+    --dnd: #ed634c;
+    --idle: #c5c15a;
+    --streaming: #9c8499;
+    --offline: #719398;
+
+    /* Edges remain quiet until focus arrives. */
+    --border-light: rgb(44 81 88 / 62%);
+    --border: #2c5158;
+    --border-hover: color-mix(in oklab, #00c6c2 46%, #2c5158);
+    --button-border: rgb(200 227 226 / 15%);
+
+    /* Midnight's five-step semantic families, derived from Base24 pairs. */
+    --red-1: #f47a64;
+    --red-2: #ed634c;
+    --red-3: color-mix(in oklab, #ed634c 88%, #0b1d20);
+    --red-4: color-mix(in oklab, #ed634c 76%, #0b1d20);
+    --red-5: color-mix(in oklab, #ed634c 64%, #0b1d20);
+
+    --green-1: #7ac48e;
+    --green-2: #58ad73;
+    --green-3: color-mix(in oklab, #58ad73 88%, #0b1d20);
+    --green-4: color-mix(in oklab, #58ad73 76%, #0b1d20);
+    --green-5: color-mix(in oklab, #58ad73 64%, #0b1d20);
+
+    --blue-1: #83a6be;
+    --blue-2: #668ca9;
+    --blue-3: color-mix(in oklab, #668ca9 88%, #0b1d20);
+    --blue-4: color-mix(in oklab, #668ca9 76%, #0b1d20);
+    --blue-5: color-mix(in oklab, #668ca9 64%, #0b1d20);
+
+    --yellow-1: #d8d373;
+    --yellow-2: #c5c15a;
+    --yellow-3: color-mix(in oklab, #c5c15a 88%, #0b1d20);
+    --yellow-4: color-mix(in oklab, #c5c15a 76%, #0b1d20);
+    --yellow-5: color-mix(in oklab, #c5c15a 64%, #0b1d20);
+
+    --purple-1: #b49eb0;
+    --purple-2: #9c8499;
+    --purple-3: color-mix(in oklab, #9c8499 88%, #0b1d20);
+    --purple-4: color-mix(in oklab, #9c8499 76%, #0b1d20);
+    --purple-5: color-mix(in oklab, #9c8499 64%, #0b1d20);
+
+    --last-call-orange: #d07a3f;
+    --last-call-brown: #967d6d;
+    --last-call-unread: #c5c15a;
+    --last-call-unread-hover: #d8d373;
+
+    /* Discord variables not consistently covered by client builds. */
+    --scrollbar-auto-thumb: #42686f;
+    --scrollbar-auto-track: #0b1d20;
+    --scrollbar-thin-thumb: #42686f;
+    --scrollbar-thin-track: transparent;
+}
+
+/* --------------------------------------------------------------------------
+   Small, geometry-safe finishing details
+   -------------------------------------------------------------------------- */
+
+/* Channel state semantics: muted is read, yellow is waiting, cyan is focus,
+   and red remains reserved for direct mentions and urgent badges. */
+.modeUnreadImportant__2ea32 .name__2ea32,
+.modeUnreadImportant__2ea32 .icon__2ea32 {
+    color: var(--last-call-unread) !important;
+}
+
+.modeUnreadImportant__2ea32:hover .name__2ea32,
+.modeUnreadImportant__2ea32:hover .icon__2ea32 {
+    color: var(--last-call-unread-hover) !important;
+}
+
+.modeUnreadImportant__2ea32 .unread__2ea32 {
+    background-color: var(--last-call-unread-hover);
+    box-shadow: 0 0 10px rgb(216 211 115 / 26%);
+}
+
+::selection {
+    color: var(--text-1);
+    background: rgb(0 198 194 / 34%);
+}
+
+a {
+    text-decoration-color: rgb(0 198 194 / 46%);
+    text-underline-offset: 0.14em;
+}
+
+a:hover {
+    text-decoration-color: var(--accent-1);
+}
+
+.hljs {
+    border: 1px solid var(--border-light);
+    box-shadow: inset 3px 0 0 rgb(0 198 194 / 42%);
+}
+
+kbd {
+    color: var(--text-2);
+    background: var(--bg-2);
+    border-color: var(--border);
+    box-shadow: 0 1px 0 var(--bg-4);
+}
+
+[class*='channelTextArea']:focus-within {
+    box-shadow:
+        0 0 0 1px rgb(0 198 194 / 44%),
+        0 12px 32px rgb(1 5 6 / 30%);
+}
+
+[class*='newMessagesBar'],
+[class*='jumpToPresentBar'] {
+    color: var(--text-0);
+    background: linear-gradient(90deg, var(--accent-2), color-mix(in oklab, var(--accent-2) 72%, var(--bg-3)));
+}

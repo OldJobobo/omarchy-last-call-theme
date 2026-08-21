@@ -1,0 +1,36 @@
+# Last Call — hand-authored Solarized-influenced perceptual palette
+
+[window]
+opacity = 0.85
+
+[colors.primary]
+background = "#0b1d20"
+foreground = "#94b3b5"
+
+[colors.normal]
+black   = "#0b1d20"
+red     = "#ed634c"
+green   = "#58ad73"
+yellow  = "#c5c15a"
+blue    = "#668ca9"
+magenta = "#9c8499"
+cyan    = "#00c6c2"
+white   = "#94b3b5"
+
+[colors.bright]
+black   = "#42686f"
+red     = "#f47a64"
+green   = "#7ac48e"
+yellow  = "#d8d373"
+blue    = "#83a6be"
+magenta = "#b49eb0"
+cyan    = "#42d8d2"
+white   = "#e0f5f2"
+
+[colors.cursor]
+text   = "#0b1d20"
+cursor = "#e0f5f2"
+
+[colors.selection]
+text       = "#c8e3e2"
+background = "#42686f"

@@ -1,0 +1,189 @@
+/**
+ * Last Call — Aether GTK integration
+ * GTK4/Adwaita custom styling
+ */
+
+/* Cold Line / Warm Signal palette mapped through Aether */
+@define-color background #0b1d20;
+@define-color surface #1e4147;
+@define-color raised_surface #1e4147;
+@define-color selection #42686f;
+@define-color foreground #94b3b5;
+@define-color focus #00c6c2;
+
+@define-color black #0b1d20;
+@define-color red #ed634c;
+@define-color green #58ad73;
+@define-color yellow #c5c15a;
+@define-color blue #668ca9;
+@define-color magenta #9c8499;
+@define-color cyan #00c6c2;
+@define-color white #94b3b5;
+@define-color bright_black #42686f;
+@define-color bright_red #f47a64;
+@define-color bright_green #7ac48e;
+@define-color bright_yellow #d8d373;
+@define-color bright_blue #83a6be;
+@define-color bright_magenta #b49eb0;
+@define-color bright_cyan #42d8d2;
+@define-color bright_white #e0f5f2;
+@define-color muted_text #719398;
+
+/* Adwaita Color Overrides */
+@define-color accent_bg_color @focus;
+@define-color accent_fg_color @background;
+@define-color accent_color @focus;
+
+@define-color window_bg_color @background;
+@define-color window_fg_color @foreground;
+
+/* Smoked-glass surface hierarchy */
+@define-color view_bg_color @background;
+@define-color view_fg_color @foreground;
+@define-color sidebar_bg_color @surface;
+@define-color sidebar_fg_color @foreground;
+@define-color sidebar_backdrop_color @surface;
+@define-color sidebar_shade_color @black;
+
+@define-color headerbar_bg_color @surface;
+@define-color headerbar_fg_color @foreground;
+@define-color headerbar_backdrop_color @background;
+@define-color headerbar_shade_color @black;
+@define-color card_bg_color @raised_surface;
+@define-color card_fg_color @foreground;
+
+@define-color popover_bg_color @surface;
+@define-color popover_fg_color @foreground;
+
+@define-color destructive_bg_color @red;
+@define-color destructive_fg_color @background;
+
+@define-color success_bg_color @green;
+@define-color success_fg_color @background;
+
+@define-color warning_bg_color @yellow;
+@define-color warning_fg_color @background;
+
+@define-color error_bg_color @red;
+@define-color error_fg_color @background;
+
+@define-color dialog_bg_color @surface;
+@define-color dialog_fg_color @foreground;
+
+@define-color borders alpha(@foreground, 0.1);
+
+/* GTK3 Adwaita Legacy Color Variables */
+@define-color theme_fg_color @foreground;
+@define-color theme_text_color @foreground;
+@define-color theme_bg_color @background;
+@define-color theme_base_color @black;
+@define-color theme_selected_bg_color @focus;
+@define-color theme_selected_fg_color @background;
+@define-color insensitive_bg_color @background;
+@define-color insensitive_fg_color @muted_text;
+@define-color insensitive_base_color @black;
+@define-color theme_unfocused_fg_color @foreground;
+@define-color theme_unfocused_text_color @foreground;
+@define-color theme_unfocused_bg_color @background;
+@define-color theme_unfocused_base_color @black;
+@define-color theme_unfocused_selected_bg_color @blue;
+@define-color theme_unfocused_selected_fg_color @background;
+@define-color unfocused_insensitive_color @muted_text;
+@define-color unfocused_borders alpha(@foreground, 0.1);
+@define-color warning_color @yellow;
+@define-color error_color @red;
+@define-color success_color @green;
+@define-color destructive_color @red;
+
+/* Content View Colors */
+@define-color content_view_bg @black;
+@define-color text_view_bg @black;
+
+/* GtkMessageDialog styling */
+/* Target the entire dialog's background */
+messagedialog {
+    background-color: @dialog_bg_color;
+}
+
+/* Target the main message label inside the dialog */
+messagedialog label {
+    color: @dialog_fg_color;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+/* Target the secondary, more detailed text (if any) */
+messagedialog .secondary-text {
+    font-size: 10pt;
+    font-style: italic;
+}
+
+/* Target the buttons in the dialog's action area */
+messagedialog button {
+    background-color: @black;
+    color: @foreground;
+    border: 1px solid @bright_black;
+    padding: 10px;
+}
+
+messagedialog button:hover {
+    background-color: @blue;
+}
+
+banner revealer widget {
+    background: @bright_black;
+    padding: 5px;
+    color: @foreground;
+}
+
+/* GtkAlertDialog styling */
+alertdialog.background {
+    background-color: @dialog_bg_color;
+    color: @dialog_fg_color;
+}
+
+alertdialog .titlebar {
+    background-color: @headerbar_bg_color;
+    color: @headerbar_fg_color;
+}
+
+alertdialog box {
+    background-color: @dialog_bg_color;
+}
+
+alertdialog label {
+    color: @dialog_fg_color;
+}
+
+filechooser .dialog-action-box {
+    border-top: 1px solid @bright_black;
+}
+
+filechooser .dialog-action-box:backdrop {
+    border-top-color: @black;
+}
+
+filechooser #pathbarbox {
+    border-bottom: 1px solid @bright_black;
+}
+
+filechooserbutton:drop(active) {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+toast {
+    background-color: @black;
+    color: @foreground;
+}
+
+toast button.circular.flat.image-button:hover {
+    color: @background;
+    background-color: @red;
+}
+
+/* Sharp corners, Hyprland-inspired */
+* {
+    border-radius: 0;
+}
+
