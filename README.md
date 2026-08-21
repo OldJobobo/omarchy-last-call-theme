@@ -26,8 +26,7 @@ Select **Last Call** from the Omarchy theme menu after installation.
 
 ## What’s Included
 
-- Omarchy 4 shell styling and Hyprland presentation
-- Compatibility styling for Omarchy 3.8
+- Omarchy 4 shell styling and native Hyprland presentation
 - Alacritty, Foot, Ghostty, and Kitty themes
 - Zed, VS Code, and Neovim/Aether editor treatments
 - btop, GTK, Chromium, and Zellij integration
@@ -51,13 +50,13 @@ Load [`vencord.theme.css`](vencord.theme.css) through Vencord’s **Themes** set
 
 ## Base24 Palette
 
-The included [`last-call-base24.yaml`](last-call-base24.yaml) provides 24 individually authored colors with no placeholder slot duplication. It can be used independently anywhere Base24 schemes are supported.
+The included [`last-call-base24.yaml`](last-call-base24.yaml) provides 24 individually authored colors with no placeholder slot duplication. Its bright yellow, green, cyan, blue, and magenta extension slots recede into sign ash, bottle mist, signal fog, rain slate, and mauve ash—bringing a Solarized-like neutral shift to terminal brights. The scheme can be used independently anywhere Base24 is supported.
 
 | Role | Color | Purpose |
 | --- | --- | --- |
 | Canvas | `#0B1D20` | Main background |
 | Cyan | `#00C6C2` | Focus and connection |
-| Yellow | `#C5C15A` | Waiting and unread activity |
+| Yellow | `#B79A54` | Waiting and unread activity |
 | Green | `#58AD73` | Success and positive state |
 | Red | `#ED634C` | Errors and urgent attention |
 | Foreground | `#94B3B5` | Primary text |
@@ -88,7 +87,7 @@ The included [`last-call-base24.yaml`](last-call-base24.yaml) provides 24 indivi
 
 ## Compatibility
 
-- Built for Omarchy 4, with the corresponding Hyprland presentation retained for Omarchy 3.8.
+- Built specifically for Omarchy 4.
 - Vencord is optional and must be enabled separately through Vencord or a theme-hook integration.
 - `Yaru-yellow` is selected as the matching icon theme.
 

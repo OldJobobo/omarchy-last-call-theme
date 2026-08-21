@@ -94,7 +94,7 @@ body {
     --message-hover: rgb(1 5 6 / 22%);
 
     /* Cyan is connection/focus; red is reserved for urgent state. */
-    --accent-1: #42d8d2;
+    --accent-1: #a9c2c1;
     --accent-2: #00c6c2;
     --accent-3: color-mix(in oklab, #00c6c2 88%, #0b1d20);
     --accent-4: color-mix(in oklab, #00c6c2 76%, #0b1d20);
@@ -108,7 +108,7 @@ body {
     /* Presence and notification signals. */
     --online: #58ad73;
     --dnd: #ed634c;
-    --idle: #c5c15a;
+    --idle: #b79a54;
     --streaming: #9c8499;
     --offline: #719398;
 
@@ -125,25 +125,25 @@ body {
     --red-4: color-mix(in oklab, #ed634c 76%, #0b1d20);
     --red-5: color-mix(in oklab, #ed634c 64%, #0b1d20);
 
-    --green-1: #7ac48e;
+    --green-1: #8fa99a;
     --green-2: #58ad73;
     --green-3: color-mix(in oklab, #58ad73 88%, #0b1d20);
     --green-4: color-mix(in oklab, #58ad73 76%, #0b1d20);
     --green-5: color-mix(in oklab, #58ad73 64%, #0b1d20);
 
-    --blue-1: #83a6be;
+    --blue-1: #899fa4;
     --blue-2: #668ca9;
     --blue-3: color-mix(in oklab, #668ca9 88%, #0b1d20);
     --blue-4: color-mix(in oklab, #668ca9 76%, #0b1d20);
     --blue-5: color-mix(in oklab, #668ca9 64%, #0b1d20);
 
-    --yellow-1: #d8d373;
-    --yellow-2: #c5c15a;
-    --yellow-3: color-mix(in oklab, #c5c15a 88%, #0b1d20);
-    --yellow-4: color-mix(in oklab, #c5c15a 76%, #0b1d20);
-    --yellow-5: color-mix(in oklab, #c5c15a 64%, #0b1d20);
+    --yellow-1: #b5b49b;
+    --yellow-2: #b79a54;
+    --yellow-3: color-mix(in oklab, #b79a54 88%, #0b1d20);
+    --yellow-4: color-mix(in oklab, #b79a54 76%, #0b1d20);
+    --yellow-5: color-mix(in oklab, #b79a54 64%, #0b1d20);
 
-    --purple-1: #b49eb0;
+    --purple-1: #a4939e;
     --purple-2: #9c8499;
     --purple-3: color-mix(in oklab, #9c8499 88%, #0b1d20);
     --purple-4: color-mix(in oklab, #9c8499 76%, #0b1d20);
@@ -151,8 +151,8 @@ body {
 
     --last-call-orange: #d07a3f;
     --last-call-brown: #967d6d;
-    --last-call-unread: #c5c15a;
-    --last-call-unread-hover: #d8d373;
+    --last-call-unread: #b79a54;
+    --last-call-unread-hover: color-mix(in oklab, #b79a54 86%, #e0f5f2);
 
     /* Discord variables not consistently covered by client builds. */
     --scrollbar-auto-thumb: #42686f;

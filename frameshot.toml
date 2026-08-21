@@ -1,0 +1,38 @@
+version = 1
+name = "Last Call night shift"
+theme_name = "Last Call"
+canvas = [2560, 1440]
+wallpaper = "{theme}/backgrounds/daniil-alekseev-lc-main.jpg"
+workspace = "90"
+monitor = "focused"
+focus = "btop"
+settle_seconds = 3.0
+terminal = "foot"
+
+# A broad code surface establishes the cool working canvas.
+[[windows]]
+id = "nvim"
+cwd = "{templates}"
+command = ["nvim", "rust-preview-demo.rs", "+normal! 12Gzz"]
+rect = [90, 90, 1120, 750]
+
+# Telemetry is the active signal panel and showcases the authored btop ramps.
+[[windows]]
+id = "btop"
+cwd = "{theme}"
+command = ["btop"]
+rect = [1350, 90, 1130, 650]
+
+# The lower-left terminal is tall enough to show the full MOTD palette and system card.
+[[windows]]
+id = "fastfetch"
+cwd = "{theme}"
+command = ["bash", "-lc", "fastfetch; exec bash"]
+rect = [110, 875, 820, 320]
+
+# The low audio trace completes the composition while preserving street detail.
+[[windows]]
+id = "cava"
+cwd = "{theme}"
+command = ["bash", "-lc", "cava; exec bash"]
+rect = [470, 1215, 1720, 165]

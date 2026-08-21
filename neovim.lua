@@ -26,7 +26,7 @@ return {
                 -- orange: Constants, numbers, current line number, git modifications
                 orange = "#d07a3f",
                 -- yellow: Types, classes, constructors, warnings, numbers, booleans
-                yellow = "#c5c15a",
+                yellow = "#b79a54",
                 -- green: Comments, strings, success states, git additions
                 green = "#58ad73",
                 -- cyan: Parameters, regex, preprocessor, hints, properties

@@ -1,70 +1,58 @@
-# Main background, empty for terminal default, need to be empty if you want transparent background
-theme[main_bg]="#0b1d20"
-
-# Main text color
+# Last Call — rain-cold telemetry with warm pressure signals.
+# Leave the canvas transparent so btop inherits the terminal's 0.85 opacity.
+theme[main_bg]=""
 theme[main_fg]="#94b3b5"
 
-# Title color for boxes
-theme[title]="#e0f5f2"
-
-# Highlight color for keyboard shortcuts
+# Cold fluorescent hierarchy.
+theme[title]="#c8e3e2"
 theme[hi_fg]="#00c6c2"
-
-# Background color of selected item in processes box
-theme[selected_bg]="#42686f"
-
-# Foreground color of selected item in processes box
-theme[selected_fg]="#c8e3e2"
-
-# Color of inactive/disabled text
 theme[inactive_fg]="#719398"
 
-# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
-theme[proc_misc]="#c5c15a"
+# Process selection reads as wet glass rather than a solid accent block.
+theme[selected_bg]="#42686f"
+theme[selected_fg]="#e0f5f2"
+theme[proc_misc]="#d07a3f"
 
-# Box outline and divider line color
+# Each panel keeps one stable identity; dividers stay out of the way.
 theme[cpu_box]="#00c6c2"
 theme[mem_box]="#58ad73"
 theme[net_box]="#668ca9"
-theme[proc_box]="#1e4147"
-theme[div_line]="#1e4147"
+theme[proc_box]="#b79a54"
+theme[div_line]="#2c5158"
 
-# Gradient for all meters and graphs
+# Temperature moves from rain reflection through warning brass to signal red.
 theme[temp_start]="#668ca9"
-theme[temp_mid]="#c5c15a"
+theme[temp_mid]="#b79a54"
 theme[temp_end]="#ed634c"
 
-
+# CPU activity stays on the cold signal line.
 theme[cpu_start]="#668ca9"
 theme[cpu_mid]="#00c6c2"
-theme[cpu_end]="#e0f5f2"
+theme[cpu_end]="#a9c2c1"
 
+# Memory states are related but distinct at a glance.
+theme[free_start]="#668ca9"
+theme[free_mid]="#58ad73"
+theme[free_end]="#8fa99a"
 
-theme[free_start]="#00c6c2"
-theme[free_mid]="#c5c15a"
-theme[free_end]="#c5c15a"
-
-
-theme[cached_start]="#c5c15a"
-theme[cached_mid]="#c5c15a"
-theme[cached_end]="#c5c15a"
-
+theme[cached_start]="#967d6d"
+theme[cached_mid]="#d07a3f"
+theme[cached_end]="#b79a54"
 
 theme[available_start]="#00c6c2"
-theme[available_mid]="#00c6c2"
-theme[available_end]="#00c6c2"
+theme[available_mid]="#a9c2c1"
+theme[available_end]="#c8e3e2"
 
-
+# Used memory becomes warmer as pressure rises.
 theme[used_start]="#58ad73"
-theme[used_mid]="#58ad73"
-theme[used_end]="#58ad73"
+theme[used_mid]="#b79a54"
+theme[used_end]="#ed634c"
 
-
-theme[download_start]="#c5c15a"
+# Network directions separate into cool download and warm upload lanes.
+theme[download_start]="#668ca9"
 theme[download_mid]="#00c6c2"
-theme[download_end]="#00c6c2"
+theme[download_end]="#a9c2c1"
 
-
-theme[upload_start]="#c5c15a"
-theme[upload_mid]="#00c6c2"
-theme[upload_end]="#00c6c2"
+theme[upload_start]="#9c8499"
+theme[upload_mid]="#d07a3f"
+theme[upload_end]="#f47a64"

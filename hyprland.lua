@@ -20,7 +20,7 @@ hl.config({
     col = {
       border_active = activeBorderColor,
       border_inactive = inactiveBorderColor,
-      border_locked_active = "rgb(C5C15A)",
+      border_locked_active = "rgb(B79A54)",
       border_locked_inactive = inactiveBorderColor,
     },
   },

@@ -81,7 +81,7 @@ text                       = "#94b3b5"
 border           = "hyprland.active-border"
 border-alpha     = 0.90
 border-width     = 2
-countdown        = "#c5c15a"
+countdown        = "#b79a54"
 
 [launcher]
 background                  = "#1e4147"
