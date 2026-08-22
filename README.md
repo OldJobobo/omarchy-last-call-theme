@@ -67,7 +67,16 @@ The included [`last-call-base24.yaml`](last-call-base24.yaml) provides 24 indivi
 
 ![Contact sheet of all eleven Last Call wallpapers](wallpaper-contact-sheet.jpg)
 
-Eleven ultrawide scenes move between rain-cold streets, warm shop light, and focused phone-booth studies. The full-resolution originals are available in [`backgrounds/`](backgrounds/).
+Eleven ultrawide scenes move between rain-cold streets, warm shop light, and focused phone-booth studies. Each wallpaper uses Omarchy’s numbered, kebab-case naming convention.
+
+| No. | Wallpaper | No. | Wallpaper |
+| ---: | --- | ---: | --- |
+| 01 | [Closing Hour](backgrounds/01-closing-hour.jpg) | 07 | [Ghost Signage](backgrounds/07-ghost-signage.jpg) |
+| 02 | [Rain Shelter](backgrounds/02-rain-shelter.jpg) | 08 | [Cold Connection](backgrounds/08-cold-connection.jpg) |
+| 03 | [Midnight Table](backgrounds/03-midnight-table.jpg) | 09 | [Scarlet Signal](backgrounds/09-scarlet-signal.jpg) |
+| 04 | [Faded Storefront](backgrounds/04-faded-storefront.jpg) | 10 | [Aquarium Call](backgrounds/10-aquarium-call.jpg) |
+| 05 | [Red Corner](backgrounds/05-red-corner.jpg) | 11 | [Ember Call](backgrounds/11-ember-call.jpg) |
+| 06 | [Wet Passage](backgrounds/06-wet-passage.jpg) |  |  |
 
 ## Compatibility
 

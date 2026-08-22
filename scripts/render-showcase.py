@@ -106,17 +106,17 @@ def image_card(canvas, path, box, label, number, focus=(0.5, 0.5), hero=False):
 
 def render_wallpapers():
     paths = [
-        ("daniil-alekseev-lc-main.jpg", "LAST CALL / MAIN", (0.51, 0.5)),
-        ("daniil-alekseev-lc-lh-01.jpg", "LATE HOUSE", (0.5, 0.5)),
-        ("daniil-alekseev-lc-restaraunt-01.jpg", "RESTAURANT", (0.5, 0.5)),
-        ("daniil-alekseev-lc-shopfacade.jpg", "SHOP FACADE", (0.5, 0.5)),
-        ("daniil-alekseev-lc-street-01.jpg", "STREET / 01", (0.5, 0.5)),
-        ("daniil-alekseev-lc-street-02.jpg", "STREET / 02", (0.5, 0.5)),
-        ("daniil-alekseev-lc-street-03.jpg", "STREET / 03", (0.5, 0.5)),
-        ("daniil-alekseev-pb-01.jpg", "PHONE BOOTH / 01", (0.5, 0.48)),
-        ("daniil-alekseev-pb-01-red.jpg", "RED SIGNAL / 01", (0.5, 0.48)),
-        ("daniil-alekseev-pb-03.jpg", "PHONE BOOTH / 03", (0.5, 0.48)),
-        ("daniil-alekseev-pb-03-red.jpg", "RED SIGNAL / 03", (0.5, 0.48)),
+        ("01-closing-hour.jpg", "CLOSING HOUR", (0.51, 0.5)),
+        ("02-rain-shelter.jpg", "RAIN SHELTER", (0.5, 0.5)),
+        ("03-midnight-table.jpg", "MIDNIGHT TABLE", (0.5, 0.5)),
+        ("04-faded-storefront.jpg", "FADED STOREFRONT", (0.5, 0.5)),
+        ("05-red-corner.jpg", "RED CORNER", (0.5, 0.5)),
+        ("06-wet-passage.jpg", "WET PASSAGE", (0.5, 0.5)),
+        ("07-ghost-signage.jpg", "GHOST SIGNAGE", (0.5, 0.5)),
+        ("08-cold-connection.jpg", "COLD CONNECTION", (0.5, 0.48)),
+        ("09-scarlet-signal.jpg", "SCARLET SIGNAL", (0.5, 0.48)),
+        ("10-aquarium-call.jpg", "AQUARIUM CALL", (0.5, 0.48)),
+        ("11-ember-call.jpg", "EMBER CALL", (0.5, 0.48)),
     ]
     canvas = base_canvas(BACKGROUNDS / paths[0][0], blur=18, dim=202)
     glass_panel(canvas, (80, 70, 2480, 1370), radius=34, alpha=224)
@@ -174,7 +174,7 @@ def render_palette():
         ("base14", "Bottle Mist", "#8FA99A"), ("base15", "Signal Fog", "#A9C2C1"),
         ("base16", "Rain Slate", "#899FA4"), ("base17", "Mauve Ash", "#A4939E"),
     ]
-    canvas = base_canvas(BACKGROUNDS / "daniil-alekseev-pb-03-red.jpg", blur=20, dim=206)
+    canvas = base_canvas(BACKGROUNDS / "11-ember-call.jpg", blur=20, dim=206)
     glass_panel(canvas, (80, 70, 2480, 1370), radius=34, alpha=228)
     draw = ImageDraw.Draw(canvas)
 
